@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
+		<title>Jia En Low Personal Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,7 +21,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Jia En Low</h1>
-						<p>Regtech Engineer. Data Enthusiast. </p>
+						<p>Regtech Engineer - Data Enthusiast</p>
 						<nav>
 							<ul>
 								<li><a href="https://www.linkedin.com/in/low-jia-en-67a794202/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
@@ -30,18 +30,66 @@
 								<li><a href="https://wa.me/447443881395" class="icon brands fa-whatsapp"><span class="label">Phone</span></a></li>
 							</ul>
 						</nav>
+
+				
 					</header>
 
-				<!-- Footer -->
 					<!-- <footer id="footer">
+						<span class="copyright">
+							&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.
+							<span><button>Click Me</button></span>
+						</span>
 					</footer> -->
+					<footer id="footer">
+						<button id= 'scrollDownButton'>Click Me</button>
+					</footer>
+					
+					<!-- <footer>
+						<span><button>Click Me</button></span>
+				</span>  -->
+						
+						<!-- <ul class="buttons stacked">
+						<li><a href="#main" class="button fit scrolly">About Me</a></li>
+						</ul> -->
+					</footer>
 
+					<section id="about">
+						<div class="inner">
+
+							<header>
+								<h2>TWENTY</h2>
+							</header>
+							<p>This is <strong>Twenty</strong>, a free
+							<br />
+							responsive template
+							<br />
+							by <a href="http://html5up.net">HTML5 UP</a>.</p>
+							<footer>
+								<ul class="buttons stacked">
+									<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+								</ul>
+							</footer>
+	
+						</div>
+					</section>
 			</div>
 		</div>
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			// Get a reference to the button and the section you want to scroll to
+			var scrollDownButton = document.getElementById('scrollDownButton');
+			var aboutSection = document.getElementById('about'); // Replace 'about' with the actual id of your section
+
+			// Function to scroll to the section when the button is clicked
+			function scrollToSection() {
+				aboutSection.scrollIntoView({ behavior: 'smooth' });
+			}
+
+			// Add a click event listener to the button
+			scrollDownButton.addEventListener('click', scrollToSection);
+
 		</script>
 	</body>
 </html>

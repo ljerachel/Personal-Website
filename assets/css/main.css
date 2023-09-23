@@ -891,6 +891,27 @@ input, select, textarea {
 			width: 2250px;
 		} }
 
+
+	ul.buttons.stacked li {
+		font-size: 30px;
+		font-weight: bold;
+		display: block;
+		margin: auto;
+		text-align:center;
+		width: 350px;
+		height: 80px;
+		color: black;
+		background-color: white,0.3;
+		border: 2px solid white;
+	}
+
+	ul.buttons.stacked li:first-child {
+		padding: 0;
+		opacity: 1;
+	}
+
+
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
